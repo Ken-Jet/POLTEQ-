@@ -1,2 +1,12 @@
 @import "tailwindcss";
 
+@font-face{
+    font-family : 'Droid-Sans';
+    src : url('../font/DroidSans.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@theme {
+    --font-DSans: "Droid-Sans" , sans-serif;
+}
