@@ -7,6 +7,12 @@
     font-style: normal;
 }
 
+@font-face{
+    font-family : 'Droid-Sans-Bold';
+    src : url('../font/DroidSans-Bold.ttf');
+}
+
 @theme {
     --font-DSans: "Droid-Sans" , sans-serif;
+    --font-DSansBold : 'Droid-Sans-Bold', sans-serif;
 }
