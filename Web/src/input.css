@@ -16,3 +16,17 @@
     --font-DSans: "Droid-Sans" , sans-serif;
     --font-DSansBold : 'Droid-Sans-Bold', sans-serif;
 }
+
+@layer utilities {
+  .swiper-ease-linear .swiper-wrapper {
+    transition-timing-function: linear !important;
+  }
+
+  .swiper2 .swiper-slide {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+}
+}
+

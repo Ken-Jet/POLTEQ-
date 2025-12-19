@@ -7,9 +7,10 @@
     <title>Polteq</title>
 
     <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
 </head>
-<body>
-    <div class="relative flex flex-row justify-between mt-5 align-center">
+<body class="overflow-x-hidden">
+    <div class="relative flex flex-row justify-between mt-3 align-center bg-white shadow-lg pb-[10px] box-1">
         <div class="relative flex flex-row">
             <img src="img/logo polteq.jpg" alt="" class="w-[100px] h-[75px] bg-cover relative left-5">
             <div class="relative flex flex-col justify-center">
@@ -18,10 +19,10 @@
             </div>
         </div>
         <div class="mr-10 relative flex flex row items-center justify-center gap-15">
-            <p class="font-DSansBold text-[17px] hover:underline cursor-pointer">Home</p>
-            <p class="font-DSansBold text-[17px] hover:underline cursor-pointer">Tentang</p>
-            <p class="font-DSansBold text-[17px] hover:underline cursor-pointer">Program Studi</p>
-            <p class="font-DSansBold text-[17px] hover:underline cursor-pointer">Informasi</p>
+            <p class="font-DSansBold text-[18px] hover:underline cursor-pointer">Home</p>
+            <p class="font-DSansBold text-[18px] hover:underline cursor-pointer">Tentang</p>
+            <p class="font-DSansBold text-[18px] hover:underline cursor-pointer">Program Studi</p>
+            <p class="font-DSansBold text-[18px] hover:underline cursor-pointer">Informasi</p>
             <div class="relative flex flex-row z-2 justify-center items-center">
                 <div class="absolute outline-[#1a0278] w-[40px] h-[40px] outline-3 z-1 rounded-[50%] opacity-0 bulat-1"></div>
                 <p class="text-[25px]">&#9776;</p>
@@ -29,8 +30,223 @@
         </div>
     </div>
 
-    <div class="">
-         <div class="bg-[url(./../img/Gedung-1.jpg)] w-[98%] h-[700px] bg-contain bg-center"></div>
+    <div class="relative flex flex-row justify-center items-center -z-1">
+         <div class="bg-[url(./../img/Gedung-1.jpg)] w-[100%] h-[635px] bg-cover bg-center bg-no-repeat rounded-[10px] absolute top-[0.1px] absolute -z-1 box-2"></div>
+         <div class="bg-linear-[10deg,rgba(0,0,0,1)_2%,rgba(0,0,0,0)_98%] absolute z-2 w-[100%] h-[635px] top-[0.1px] box-3">
+            <div class="absolute bottom-15 ml-10 z-2">
+                <p class="font-DSansBold text-white text-[50px] relative top-2">Selamat datang di <span class="text-red-700 text-[70px]">POLTEQ</span></p>
+                <p class="font-DSans text-white text-[22px]">Bangun karier sejak di bangku kuliah <br> dengan pengalaman industri dan pembelajaran terapan yang relevan dengan dunia kerja.</p>
+            </div>
+         </div>
+    </div>
+
+    <div class="relative mt-190 box-4">
+        <p class="font-DSansBold text-[#001ba3] text-[60px] text-center">Tentang <span class="text-red-700">POLTEQ</span></p>
+    </div>
+
+    <div class="relative flex flex-row justify-center gap-50 items-center mt-30">
+        <div class="w-[700px] font-DSans italic text-[20px] box-5">
+            <p>Didirikan sejak 2002, Politeknik Tonggak Equator atau yang familiar juga dikenal dengan POLTEQ merupakan Lembaga Pendidikan Vokasi dan Lembaga Pendidikan Profesional yang bersifat universal dengan memberikan pengalaman belajar dan latihan menuju pembentukan kemampuan profesional dalam Ilmu Pengetahuan dan Aplikasi.</p>
+        </div>
+        <div class="bg-white w-[300px] h-[300px] relative flex flex-row justify-center items-center rounded-[50%] drop-shadow-xl/25 box-6">
+            <img src="img/POLTEQ-BG.png" alt="" class="w-[250px] h-[200px] bg-cover">
+        </div>
+    </div>
+
+    <div class="mt-50"><p class="font-DSansBold text-[60px] text-center text-[#001ba3] teks-1">Program Studi</p></div>
+
+    <div class="relative w-full flex flex-row justify-center items-center gap-20 mt-20">
+        <div class=" w-[300px] h-[300px] rounded-[50%] bg-[linear-gradient(200deg,#FFD834_15%,#F6CF31_61%,#D4B32A_90%)] shadow-xl/15 relative flex flex-col justify-center items-center cursor-pointer box-7">
+            <img src="img/BK-1.png" alt="" class="w-[200px] h-[200px]">
+            <p class="font-DSansBold text-[17px] relative bottom-5">Bisnis Kreatif</p>
+        </div>
+        <div class="w-[300px] h-[300px] rounded-[50%] bg-[linear-gradient(200deg,#00BF63_15%,#00B75E_61%,#00954D_90%)] shadow-xl/15 relative flex flex-col justify-center items-center cursor-pointer box-8">
+            <img src="img/TPTP-1.png" alt="" class="w-[200px] h-[200px]">
+            <p class="font-DSansBold text-[17px] relative bottom-5 text-center">Teknologi Produksi <br> Tanaman Perkebunan</p>
+        </div>
+        <div class="w-[300px] h-[300px] rounded-[50%] bg-[linear-gradient(200deg,#B00403_15%,#A70303_61%,#850303_90%)] shadow-xl/15 relative flex flex-col justify-center items-center cursor-pointer box-9">
+            <img src="img/EBPC-1.png" alt="" class="w-[175px] h-[175px]">
+            <p class="font-DSansBold text-[14px] relative top-2 text-center">English for Business and <br> Professional Communication</p>
+        </div>
+        <div class="w-[300px] h-[300px] rounded-[50%] bg-[linear-gradient(200deg,#3825FD_15%,#3625F4_61%,#2E1FD2_90%)] shadow-xl/15 relative flex flex-col justify-center items-center cursor-pointer box-10">
+            <img src="img/TP-1.png" alt="" class="w-[200px] h-[200px]">
+            <p class="font-DSansBold text-[17px] relative top-2 text-center">Teknologi Pangan</p>
+        </div>
+    </div>
+
+    <div class="w-full relative mt-40 flex flex-col justify-center items-center box-11">
+        <p class="font-DSansBold text-[60px] text-[#001ba3]">Campus Life</p>
+    </div>
+
+    <div class="relative flex flex-col justify-center items-center mt-10 gap-5 box-12">
+        <div class="relative flex flex-row justify-center items-center w-full h-full">
+            <div class="relative flex flex-col justify-center items-center w-full h-full gap-3">
+                <img src="img/Cf-1.jpg" alt="" class="w-[412px] h-[269px] bg-cover rounded-[30px] shadow-md/20 gambar-1">
+                <p class="font-DSansBold text-[20px]">UKM Badminton</p>
+            </div>
+            <div class="relative flex flex-col justify-center items-center w-full h-full gap-3">
+                <img src="img/Cf-2.jpg" alt="" class="w-[412px] h-[269px] bg-cover rounded-[30px] shadow-md/20">
+                <p class="font-DSansBold text-[20px]">UKM Dance</p>
+            </div>
+            <div class="relative flex flex-col justify-center items-center w-full h-full gap-3">
+                <img src="img/Cf-3.jpg" alt="" class="w-[412px] h-[269px] bg-cover rounded-[30px] shadow-md/20">
+                <p class="font-DSansBold text-[20px]">UKM Basket</p>
+            </div>  
+        </div>
+        <div class="relative flex flex-row justify-center items-center w-full h-full">
+            <div class="relative flex flex-col justify-center items-center w-full h-full gap-3">
+                <img src="img/Cf-1.jpg" alt="" class="w-[412px] h-[269px] bg-cover rounded-[30px] shadow-md/20 gambar-1">
+                <p class="font-DSansBold text-[20px]">UKM Badminton</p>
+            </div>
+            <div class="relative flex flex-col justify-center items-center w-full h-full gap-3">
+                <img src="img/Cf-2.jpg" alt="" class="w-[412px] h-[269px] bg-cover rounded-[30px] shadow-md/20">
+                <p class="font-DSansBold text-[20px]">UKM Dance</p>
+            </div>
+            <div class="relative flex flex-col justify-center items-center w-full h-full gap-3">
+                <img src="img/Cf-3.jpg" alt="" class="w-[412px] h-[269px] bg-cover rounded-[30px] shadow-md/20">
+                <p class="font-DSansBold text-[20px]">UKM Basket</p>
+            </div>  
+        </div>
+
+        <div class="relative flex flex-row justify-center items-center w-full h-full"></div>
+    </div>
+
+    <div class="w-full relative mt-30 relative flex flex-col justify-center items-center gap-15">
+        <p class="font-DSansBold text-[60px] text-[#001ba3]">Our Partner</p>
+
+        <div class="relative w-full h-[150px] swiper swiper1 swiper-ease-linear">
+            <div class="w-auto h-auto relative flex flex-row swiper-wrapper">
+                <div class="swiper-slide"><div class="w-full h-full relative flex flex-row justify-center items-center"><img src="img/BCA.png" alt="" class="w-[300px] h-full bg-contain bg-center"></div></div>
+                <div class="swiper-slide"><div class="w-full h-full relative flex flex-row justify-center items-center"><img src="img/Mandiri.png" alt="" class="w-[300px] h-full bg-contain bg-center"></div></div>
+                <div class="swiper-slide"><div class="w-full h-full relative flex flex-row justify-center items-center"><img src="img/Maybank.png" alt="" class="w-[200px] h-full bg-contain bg-center"></div></div>
+                <div class="swiper-slide"><div class="w-full h-full relative flex flex-row justify-center items-center"><img src="img/Paninbank.png" alt="" class="w-[300px] h-full bg-contain bg-center"></div></div>
+                <div class="swiper-slide"><div class="w-full h-full relative flex flex-row justify-center items-center"><img src="img/Ibis.png" alt="" class="w-[150px] h-full bg-contain bg-center"></div></div>
+                <div class="swiper-slide"><div class="w-full h-full relative flex flex-row justify-center items-center"><img src="img/Swissberlin.png" alt="" class="w-[400px] h-full bg-contain bg-center"></div></div>
+                <div class="swiper-slide"><div class="w-full h-full relative flex flex-row justify-center items-center"><img src="img/Artaboga.png" alt="" class="w-[300px] h-full bg-contain bg-center"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-30 relative flex flex-col justify-center items-center gap-10">
+        <div class="">
+            <p class="font-DSansBold text-[60px] text-[#001ba3]">Tim Dosen</p>
+        </div>
+
+        <div class="w-full h-[500px] relative flex justify-center items-center">
+            
+            <div class="w-full h-full absolute z-10">
+                <div class="relative flex flex-row justify-center items-center gap-30 right-20">
+                    <img src="img/businessman1.jpg" alt="" class="w-[300px] h-auto bg-contain tim-1 opacity-0">
+                    <div class="relative flex flex-col">
+                        <p class="font-DSansBold text-[60px] tim-1 opacity-0">Nama Dosen 1</p>
+                        <p class="font-DSans text-[20px] tim-1 opacity-0">Gelar 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-full absolute z-20">
+                <div class="relative flex flex-row justify-center items-center gap-30 right-20">
+                    <img src="img/businessman1.jpg" alt="" class="w-[300px] h-auto bg-contain tim-2 opacity-0">
+                    <div class="relative flex flex-col">
+                        <p class="font-DSansBold text-[60px] tim-2 opacity-0">Nama Dosen 2</p>
+                        <p class="font-DSans text-[20px] tim-2 opacity-0">Gelar 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-full absolute z-30">
+                <div class="relative flex flex-row justify-center items-center gap-30 right-20">
+                    <img src="img/businessman1.jpg" alt="" class="w-[300px] h-auto bg-contain tim-3 opacity-0">
+                    <div class="relative flex flex-col">
+                        <p class="font-DSansBold text-[60px] tim-3 opacity-0">Nama Dosen 3</p>
+                        <p class="font-DSans text-[20px] tim-3 opacity-0">Gelar 3</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="w-full h-full mt-40 relative flex justify-center items-center flex-col gap-15">
+        <div class="w-full h-full relative flex justify-center items-center ">
+            <div class="bg-white w-[300px] h-[300px] relative flex flex-row justify-center items-center rounded-[50%] drop-shadow-xl/25 box-13">
+                <img src="img/POLTEQ-BG.png" alt="" class="w-[250px] h-[200px] bg-cover">
+            </div>
+        </div>
+
+        <div class="">
+            <p class="font-DSansBold text-[40px] text-[#001ba3] kata-1">POLTEQ MEANS QUALITY</p>
+        </div>
+    </div>
+
+    <div class="mt-10 relative flex justify-center items-center w-full">
+        <button class="bg-[#001ba3] p-2 rounded-[10px] hover:bg-[#001370] box-14">
+            <p class="font-DSansBold text-[20px] text-white">Daftar Sekarang</p>
+        </button>
+    </div>
+
+    <div class="bg-[#001ba3] w-full h-[300px] mt-50 relative flex flex-row font-DSans text-white gap-15 pl-5 pt-3">
+        <div class="relative flex flex-col gap-3">
+            <p class="text-[25px] font-DSansBold">Hubungi Kami</p>
+            <div class="relative flex flex-col gap-3">
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/Website.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="https://polteq.ac.id" class="">polteq.ac.id</a>
+                </div>
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/kontak.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="" class="">+62-851-6757-5775</a>
+                </div>
+                <div class="relative flex flex-row gap-3 items-center">
+                    <img src="img/location.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="" class="">Jl. Fatimah <br>No.1-2, Pontianak</a>
+                </div>
+                <div class="relative flex flex-row gap-3 items-center">
+                    <img src="img/email.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="" class="">pmb@polteq.ac.id</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative flex flex-col gap-3">
+            <p class="text-[25px] font-DSansBold">Media Sosial</p>
+            <div class="relative flex flex-col gap-3">
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/instagram.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="https://www.instagram.com/politeknik_tonggak_equator/" class="">@politeknik_tonggak_equator</a>
+                </div>
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/tiktok.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="https://www.instagram.com/politeknik_tonggak_equator/" class="">@polteq</a>
+                </div>
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/youtube.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="https://www.instagram.com/politeknik_tonggak_equator/" class="">Politeknik Tonggak Equator</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <p class="text-[25px] font-DSansBold">Informasi</p>
+            <div class="relative flex flex-col gap-3">
+                <a href="" class="">Harga</a>
+                <a href="" class="">Fasilitas</a>
+                <a href="" class="">Struktur Organisasi</a>
+                <a href="" class="">Sejarah</a>
+            </div>
+        </div>
+
+        <div class="">
+            <p class="text-[25px] font-DSansBold">Program Studi</p>
+            <div class="relative flex flex-col gap-3">
+                <a href="" class="">English For Business and Proffesional Communication</a>
+                <a href="" class="">Bisnis Kreatif</a>
+                <a href="" class="">Tenkologi Pangan</a>
+                <a href="" class="">Teknologi Produksi Tanaman Perkebunan</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#001ba3] w-full h-full font-DSans text-white relative flex justify-center items-center pb-5">
+            <p class="">&copy; Copyright by Politeknik Tonggak Equator. All right reserved.</p>
     </div>
 
     <!--Gsap-->
@@ -38,6 +254,9 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/GSDevTools.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <!--Swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!--Javascript-->
     <script src="index.js"></script>
