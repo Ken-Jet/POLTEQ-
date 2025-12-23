@@ -175,8 +175,23 @@
   .sticky {
     position: sticky;
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
   .top-2 {
     top: calc(var(--spacing) * 2);
+  }
+  .top-8 {
+    top: calc(var(--spacing) * 8);
+  }
+  .top-8\.5 {
+    top: calc(var(--spacing) * 8.5);
+  }
+  .top-9 {
+    top: calc(var(--spacing) * 9);
+  }
+  .top-10 {
+    top: calc(var(--spacing) * 10);
   }
   .top-\[0\.1px\] {
     top: 0.1px;
@@ -184,23 +199,11 @@
   .right-20 {
     right: calc(var(--spacing) * 20);
   }
-  .bottom-0 {
-    bottom: calc(var(--spacing) * 0);
-  }
   .bottom-5 {
     bottom: calc(var(--spacing) * 5);
   }
   .bottom-15 {
     bottom: calc(var(--spacing) * 15);
-  }
-  .bottom-\[0\.01px\] {
-    bottom: 0.01px;
-  }
-  .bottom-\[0\.1px\] {
-    bottom: 0.1px;
-  }
-  .bottom-\[0\] {
-    bottom: 0;
   }
   .left-5 {
     left: calc(var(--spacing) * 5);
@@ -222,6 +225,27 @@
   }
   .z-30 {
     z-index: 30;
+  }
+  .z-1000 {
+    z-index: 1000;
+  }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
   }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
@@ -255,6 +279,9 @@
   }
   .table {
     display: table;
+  }
+  .h-\[0px\] {
+    height: 0px;
   }
   .h-\[25px\] {
     height: 25px;
@@ -292,17 +319,26 @@
   .h-full {
     height: 100%;
   }
+  .w-\[1px\] {
+    width: 1px;
+  }
   .w-\[25px\] {
     width: 25px;
   }
   .w-\[40px\] {
     width: 40px;
   }
+  .w-\[87\.3px\] {
+    width: 87.3px;
+  }
   .w-\[100\%\] {
     width: 100%;
   }
   .w-\[100px\] {
     width: 100px;
+  }
+  .w-\[130px\] {
+    width: 130px;
   }
   .w-\[150px\] {
     width: 150px;
@@ -358,6 +394,9 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
@@ -378,6 +417,9 @@
   }
   .gap-50 {
     gap: calc(var(--spacing) * 50);
+  }
+  .overflow-hidden {
+    overflow: hidden;
   }
   .overflow-x-hidden {
     overflow-x: hidden;
@@ -435,6 +477,9 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
   }
@@ -455,6 +500,9 @@
   }
   .font-DSansBold {
     font-family: var(--font-DSansBold);
+  }
+  .text-\[13px\] {
+    font-size: 13px;
   }
   .text-\[14px\] {
     font-size: 14px;

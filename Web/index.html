@@ -5,12 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polteq</title>
-
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
-</head>
 <body class="overflow-x-hidden">
-    <div class="relative flex flex-row justify-between mt-3 align-center bg-white shadow-lg pb-[10px] box-1">
+    <div class="sticky top-0 flex flex-row justify-between mt-3 align-center bg-white shadow-lg pb-[10px] box-1 z-1000">
         <div class="relative flex flex-row">
             <img src="img/logo polteq.jpg" alt="" class="w-[100px] h-[75px] bg-cover relative left-5">
             <div class="relative flex flex-col justify-center">
@@ -21,8 +19,30 @@
         <div class="mr-10 relative flex flex row items-center justify-center gap-15">
             <p class="font-DSansBold text-[18px] hover:underline cursor-pointer">Home</p>
             <p class="font-DSansBold text-[18px] hover:underline cursor-pointer">Tentang</p>
-            <p class="font-DSansBold text-[18px] hover:underline cursor-pointer">Program Studi</p>
-            <p class="font-DSansBold text-[18px] hover:underline cursor-pointer">Informasi</p>
+            <div class="" x-data="bar1('studi')">
+                <p class="font-DSansBold text-[18px] hover:underline cursor-pointer"  @click.stop="toggle()">Program Studi</p>
+
+                <div class="relative">
+                    <div class="absolute top-8.5 flex flex-col gap-2 w-[130px] h-[0px] bg-white overflow-hidden" x-ref="bar1" @click.outside = 'close()'>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">EBPC</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">BisKref</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">TPTP</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">TP</p>
+                    </div>
+                </div>
+            </div>
+            <div class="" x-data="bar1('Info')">
+                <p class="font-DSansBold text-[18px] hover:underline cursor-pointer" @click.stop="toggle()">Informasi</p>
+
+                <div class="relative">
+                    <div class="absolute top-8.5 flex flex-col gap-2 w-[100px] h-[0px] bg-white overflow-hidden" x-ref="bar1" @click.outside = 'close()'>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">SPP Kampus</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">Fasilitas</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">Struktur Organisasi</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">Sejarah</p>
+                    </div>
+                </div>
+            </div>
             <div class="relative flex flex-row z-2 justify-center items-center">
                 <div class="absolute outline-[#1a0278] w-[40px] h-[40px] outline-3 z-1 rounded-[50%] opacity-0 bulat-1"></div>
                 <p class="text-[25px]">&#9776;</p>
@@ -31,13 +51,13 @@
     </div>
 
     <div class="relative flex flex-row justify-center items-center -z-1">
-         <div class="bg-[url(./../img/Gedung-1.jpg)] w-[100%] h-[635px] bg-cover bg-center bg-no-repeat rounded-[10px] absolute top-[0.1px] absolute -z-1 box-2"></div>
-         <div class="bg-linear-[10deg,rgba(0,0,0,1)_2%,rgba(0,0,0,0)_98%] absolute z-2 w-[100%] h-[635px] top-[0.1px] box-3">
+        <div class="bg-[url(./../img/Gedung-1.jpg)] w-[100%] h-[635px] bg-cover bg-center bg-no-repeat rounded-[10px] absolute top-[0.1px] absolute -z-1 box-2"></div>
+        <div class="bg-linear-[10deg,rgba(0,0,0,1)_2%,rgba(0,0,0,0)_98%] absolute z-2 w-[100%] h-[635px] top-[0.1px] box-3">
             <div class="absolute bottom-15 ml-10 z-2">
                 <p class="font-DSansBold text-white text-[50px] relative top-2">Selamat datang di <span class="text-red-700 text-[70px]">POLTEQ</span></p>
                 <p class="font-DSans text-white text-[22px]">Bangun karier sejak di bangku kuliah <br> dengan pengalaman industri dan pembelajaran terapan yang relevan dengan dunia kerja.</p>
             </div>
-         </div>
+        </div>
     </div>
 
     <div class="relative mt-190 box-4">
@@ -258,7 +278,11 @@
     <!--Swiper-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
+    <!--Alpine-->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <!--Javascript-->
     <script src="index.js"></script>
+
 </body>
 </html>
