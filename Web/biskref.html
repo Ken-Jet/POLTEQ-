@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BISKREF</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-[#FFDA24] overflow-hidden relative flex flex-col min-h-screen">
+    <div class="sticky top-0 flex flex-row justify-between pt-2 align-center bg-white shadow-lg pb-[10px] box-1 z-1000">
+        <div class="relative flex flex-row">
+            <img src="img/logo polteq.jpg" alt="" class="w-[100px] h-[75px] bg-cover relative left-5">
+            <div class="relative flex flex-col justify-center">
+                <h4 class="font-DSansBold ml-10 text-[25px]">Politeknik Tonggak Equator</h4>
+                <p class="font-DSans ml-10 text-[18px]">POLTEQ Means Quality</p>
+            </div>
+        </div>
+        <div class="mr-10 relative flex flex row items-center justify-center gap-15">
+            <p class="font-DSansBold text-[18px] hover:underline cursor-pointer">Home</p>
+            <p class="font-DSansBold text-[18px] hover:underline cursor-pointer">Tentang</p>
+            <div class="" x-data="bar1('studi')">
+                <p class="font-DSansBold text-[18px] hover:underline cursor-pointer"  @click.stop="toggle()">Program Studi</p>
+
+                <div class="relative">
+                    <div class="absolute top-8.5 flex flex-col gap-2 w-[130px] h-[0px] bg-white overflow-hidden" x-ref="bar1" @click.outside = 'close()'>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">EBPC</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">BisKref</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">TPTP</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">TP</p>
+                    </div>
+                </div>
+            </div>
+            <div class="" x-data="bar1('Info')">
+                <p class="font-DSansBold text-[18px] hover:underline cursor-pointer" @click.stop="toggle()">Informasi</p>
+
+                <div class="relative">
+                    <div class="absolute top-8.5 flex flex-col gap-2 w-[100px] h-[0px] bg-white overflow-hidden" x-ref="bar1" @click.outside = 'close()'>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">SPP Kampus</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">Fasilitas</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">Struktur Organisasi</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">Sejarah</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative flex flex-row z-2 justify-center items-center">
+                <div class="absolute outline-[#1a0278] w-[40px] h-[40px] outline-3 z-1 rounded-[50%] opacity-0 bulat-1"></div>
+                <p class="text-[25px]">&#9776;</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[url(./../img/kelas-polteq.jpg)] w-screen h-screen bg-cover opacity-[0.12] bg-fixed fixed inset -z-10"></div>
+
+    <div class=" w-full h-full text-center text-[177px] mt-45 leading-none relative flex items-center justify-center">
+            <p class="font-Knewave absolute mt-50 z-3 text-white text-stroke-1 teks-1">Bisnis <br> Kreatif</p>
+            <p class="font-Knewave absolute mt-50 z-2 text-stroke-2 teks-1">Bisnis <br> Kreatif</p>
+            <p class="font-Knewave absolute mt-50 z-1 text-stroke-3 teks-1">Bisnis <br> Kreatif</p>
+    </div>
+
+    <p class="text-center font-Knewave mt-80 text-[33px] text-white text-stroke-6 teks-2">Kejar <span class="text-stroke-4">Karir Kreatif</span> di <span class="text-stroke-5">Bisnis Kreatif</span></p>
+
+    <div class="absolute w-full h-full">
+        <img src="img/Lampu.png" alt="" class="w-[156px] h-[162px] bg-contain absolute top-[147px] left-[110px] -rotate-30 gambar-1">
+        <img src="img/Tas.png" alt="" class="w-[145px] h-[125px] bg-contain absolute top-[377px] left-[246px] rotate-12 gambar-2">
+        <img src="img/Uang.png" alt="" class="w-[114px] h-[100px] bg-contain absolute top-[525px] left-[82px] -rotate-18 gambar-3">
+        <img src="img/Chart.png" alt="" class="w-[124px] h-[133px] bg-contain absolute top-[113px] left-[321px] -rotate-25 gambar-4">
+        <img src="img/Garis.png" alt="" class="w-[163px] h-[144px] bg-contain absolute top-[320px] right-[106px] -rotate-7 gambar-5">
+        <img src="img/Hp.png" alt="" class="w-[161px] h-[160px] bg-contain absolute top-[496px] right-[257px] -rotate-15 gambar-6">
+        <img src="img/Kreatif.png" alt="" class="w-[145px] h-[159px] bg-contain absolute top-[113px] right-[257px] rotate-25 gambar-7">
+        <img src="img/Video.png" alt="" class="w-[118px] h-[118px] bg-contain absolute top-[551px] right-[75px] rotate-30 gambar-8">
+        <img src="img/Uang.png" alt="" class="w-[114px] h-[100px] bg-contain absolute top-[153px] right-[71px] rotate-25 gambar-9">
+    </div>
+
+    <div class="w-full h-screen mt-20 pl-5 box-2 relative flex justify-center items-center">
+        <div class="w-full h-full relative flex flex-row">
+            <img src="img/biskref-1.png" alt="" class="w-[655px] h-[655px] gambar-10">
+            <div class="w-full h-auto relative flex flex-col">
+                <div class="relative flex flex-row gap-4.5 text-[60px] text-white mt-30 h-[150px]">
+                    <p class="font-Knewave text-stroke-1 teks-3">Apa</p>
+                    <p class="font-Knewave text-stroke-1 teks-3">itu</p>
+                    <div class="relative w-full pl-3 teks-3">
+                        <p class="font-Knewave absolute z-3 text-stroke-1 whitespace-nowrap">Bisnis Kreatif</p>
+                        <p class="font-Knewave absolute z-2 text-stroke-2 whitespace-nowrap">Bisnis Kreatif</p>
+                        <p class="font-Knewave absolute z-1 text-stroke-7 whitespace-nowrap">Bisnis Kreatif</p>
+                    </div>
+                    <p class="font-Knewave text-stroke-1 pr-20 text-[130px] relative bottom-15 teks-3">?</p>
+                </div>
+                <div class="font-Knewave text-stroke-8 text-white text-[30px]">
+                    <p class="teks-4">Bisnis kreatif itu adalah ilmu bisnis yang diterapkan di dunia industri kreatif, di mana ide, kreativitas, dan inovasi menjadi modal utama untuk menciptakan produk atau layanan yang punya nilai jual dan bisa berkembang secara ekonomi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative flex flex-col w-full h-fit justify-center items-center gap-25 mb-5 trigger-1">
+        <div class="relative flex flex-col font-Knewave items-center justify-center text-white gap-15 box-3">
+            <p class="text-[59px] text-stroke-1">Hal Apa Yang Dipelajari di</p>
+            <div class="relative w-full text-[59px] flex items-center justify-center">
+                <p class="font-Knewave absolute z-3 text-stroke-1 whitespace-nowrap">Bisnis Kreatif</p>
+                <p class="font-Knewave absolute z-2 text-stroke-2 whitespace-nowrap">Bisnis Kreatif</p>
+                <p class="font-Knewave absolute z-1 text-stroke-7 whitespace-nowrap">Bisnis Kreatif</p>
+            </div>
+        </div>
+        
+        <div class="w-full relative flex flex-row flex-wrap gap-10 justify-center items-center pb-10 font-Knewave">
+            <div class="w-auto h-auto relative flex flex-col justify-center items-center gap-3">
+                <img src="img/bisnis.png" alt="" class="w-[150px] h-[150px] bg-contain logo-1">
+                <div class="w-[325px] h-[75px] relative flex items-center justify-center bg-linear-[140deg,#FFDA24_39%,#917C14_100%] rounded-[20px] shadow-lg/75 kotak-label-1">
+                    <p class="text-[35px] teks-label-1">Bisnis</p>
+                </div>
+            </div>
+
+            <div class="w-auto h-auto relative flex flex-col justify-center items-center gap-3">
+                <img src="img/akuntansi.png" alt="" class="w-[150px] h-[150px] bg-contain logo-1">
+                <div class="w-[325px] h-[75px] relative flex items-center justify-center bg-linear-[140deg,#FFDA24_39%,#917C14_100%] rounded-[20px] shadow-lg/75 kotak-label-1">
+                    <p class="text-[35px] teks-label-1">Akuntansi</p>
+                </div>
+            </div>
+
+            <div class="w-auto h-fit relative flex flex-col justify-center items-center gap-3">
+                <img src="img/pemasaran-digital.png" alt="" class="w-[150px] h-[150px] bg-contain logo-1">
+                <div class="w-[325px] h-[75px] relative flex items-center justify-center bg-linear-[140deg,#FFDA24_39%,#917C14_100%] rounded-[20px] shadow-lg/75 kotak-label-1">
+                    <p class="text-[25px] text-center text-center teks-label-1">Pemasaran <br> Digital</p>
+                </div>
+            </div>
+
+            <div class="w-auto h-auto relative flex flex-col justify-center items-center gap-3">
+                <img src="img/ekonomi-kreatif.png" alt="" class="w-[150px] h-[150px] bg-contain logo-1">
+                <div class="w-[325px] h-[75px] relative flex items-center justify-center bg-linear-[140deg,#FFDA24_39%,#917C14_100%] rounded-[20px] shadow-lg/75 kotak-label-1">
+                    <p class="text-[25px] text-center teks-label-1">Ekonomi <br> Kreatif</p>
+                </div>
+            </div>
+
+            <div class="w-auto h-auto relative flex flex-col justify-center items-center gap-3">
+                <img src="img/manajemen-keuangan.png" alt="" class="w-[150px] h-[150px] bg-contain logo-1">
+                <div class="w-[325px] h-[75px] relative flex items-center justify-center bg-linear-[140deg,#FFDA24_39%,#917C14_100%] rounded-[20px] shadow-lg/75 kotak-label-1">
+                    <p class="text-[25px] text-center teks-label-1">Manajemen <br> Keuangan</p>
+                </div>
+            </div>
+
+            <div class="w-auto h-auto relative flex flex-col justify-center items-center gap-3">
+                <img src="img/manajemen-pemasaran.png" alt="" class="w-[150px] h-[150px] bg-contain logo-1">
+                <div class="w-[325px] h-[75px] relative flex items-center justify-center bg-linear-[140deg,#FFDA24_39%,#917C14_100%] rounded-[20px] shadow-lg/75 kotak-label-1">
+                    <p class="text-[25px] text-center teks-label-1">Manajemen <br> Pemasaran</p>
+                </div>
+            </div>
+
+            <div class="w-auto h-auto relative flex flex-col justify-center items-center gap-3">
+                <img src="img/komunikasi-kreatif.png" alt="" class="w-[150px] h-[150px] bg-contain logo-1">
+                <div class="w-[325px] h-[75px] relative flex items-center justify-center bg-linear-[140deg,#FFDA24_39%,#917C14_100%] rounded-[20px] shadow-lg/75 kotak-label-1">
+                    <p class="text-[25px] text-center teks-label-1">Komunikasi <br> Kreatif</p>
+                </div>
+            </div>
+
+            <div class="w-auto h-auto relative flex flex-col justify-center items-center gap-3">
+                <img src="img/manajemen-sdm.png" alt="" class="w-[150px] h-[150px] bg-contain logo-1">
+                <div class="w-[325px] h-[75px] relative flex items-center justify-center bg-linear-[140deg,#FFDA24_39%,#917C14_100%] rounded-[20px] shadow-lg/75 kotak-label-1">
+                    <p class="text-[25px] text-center teks-label-1">Manajemen <br> SDM</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="relative mt-30 w-full flex flex-col justify-center items-center gap-25 box-4">
+        <div class="relative flex flex-col font-Knewave items-center justify-center text-white gap-15">
+            <p class="text-[59px] text-stroke-1 teks-5">Prospek Kerja Lulusan</p>
+            <div class="relative w-full text-[59px] flex items-center justify-center teks-5">
+                <p class="font-Knewave absolute z-3 text-stroke-1 whitespace-nowrap">Bisnis Kreatif</p>
+                <p class="font-Knewave absolute z-2 text-stroke-2 whitespace-nowrap">Bisnis Kreatif</p>
+                <p class="font-Knewave absolute z-1 text-stroke-7 whitespace-nowrap">Bisnis Kreatif</p>
+            </div>
+        </div>
+
+        <div class="w-[85%] h-170 relative flex flex-col border-2 box-5">
+            <div class="relative w-full h-[35%] flex flex-row">
+                <img src="img/creative-entrepenur.jpg" alt="" class="w-[20%] h-full bg-contain box-7">
+                <img src="img/content-creator.jpg" alt="" class="w-[20%] h-full bg-contain box-7">
+                <img src="img/business-consultant.jpg" alt="" class="w-[20%] h-full bg-contain box-7">
+                <img src="img/business-strategist.jpg" alt="" class="w-[20%] h-full bg-contain box-7">
+                <img src="img/business-planner.jpg" alt="" class="w-[20%] h-full bg-contain box-7">
+            </div>
+            <div class="relative w-full h-[65%] flex flex-row" dir="ltr">
+                <div class="w-[20%] h-full bg-[#FFDA24] border-t-2 border-b-2 box-6">
+                    <div class="relative flex flex-col justify-center items-center font-Knewave mt-10 pl-2 pr-2 gap-5">
+                        <p class="text-[35px] text-center">Creative Entrepenur</p>
+                        <p class="text-[20px] text-center font-sans">Menciptakan dan mengelola usaha berbasis ide kreatif dan inovasi.Fokus pada produk/jasa unik yang memiliki nilai tambah.</p>
+                    </div>
+                </div>
+                <div class="w-[20%] h-full bg-[#FFDA24] border-s-2 border-t-2 border-b-2 box-6">
+                    <div class="relative flex flex-col justify-center items-center font-Knewave mt-10 pl-2 pr-2 gap-5">
+                        <p class="text-[35px] text-center">Content Creator</p>
+                        <p class="text-[20px] text-center font-sans">Menciptakan konten digital (video, artikel, desain, podcast) untuk edukasi, hiburan, atau promosi produk/jasa.</p>
+                    </div>
+                </div>
+                <div class="w-[20%] h-full bg-[#FFDA24] border-s-2 border-t-2 border-b-2 box-6">
+                    <div class="relative flex flex-col justify-center items-center font-Knewave mt-10 pl-2 pr-2 gap-5">
+                        <p class="text-[35px] text-center">Business Consultant</p>
+                        <p class="text-[20px] text-center font-sans">Memberikan saran profesional untuk meningkatkan kinerja perusahaan, baik dari aspek manajemen, pemasaran, maupun inovasi produk.</p>
+                    </div>
+                </div>
+                <div class="w-[20%] h-full bg-[#FFDA24] border-s-2 border-t-2 border-b-2 box-6">
+                    <div class="relative flex flex-col justify-center items-center font-Knewave mt-10 pl-2 pr-2 gap-5">
+                        <p class="text-[35px] text-center">Creative Strategist</p>
+                        <p class="text-[20px] text-center font-sans">Menyusun strategi kreatif untuk branding, kampanye pemasaran, dan komunikasi visual yang menarik audiens.</p>
+                    </div>
+                </div>
+                <div class="w-[20%] h-full bg-[#FFDA24] border-s-2 border-t-2 border-b-2 box-6">
+                    <div class="relative flex flex-col justify-center items-center font-Knewave mt-10 pl-2 pr-2 gap-5">
+                        <p class="text-[35px] text-center">Business Planner</p>
+                        <p class="text-[20px] text-center font-sans">Merancang, menganalisis, dan memetakan rencana bisnis agar ide usaha dapat dijalankan secara realistis dan berkelanjutan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-180 mt-30 relative">
+        <div class="w-full h-full relative flex justify-center items-center font-Knewave text-white text-[80px] leading-[1.3]">
+            <p class="absolute text-center text-stroke-9 z-3 teks-6">Our<br>Project</p>
+            <p class="absolute text-center text-stroke-10 z-2 teks-6">Our<br>Project</p>
+            <p class="absolute text-center text-stroke-11 z-1 teks-6">Our<br>Project</p>
+        </div>
+
+        <div class="absolute w-full h-full -z-1 bottom-[1px] box-8">
+            <div class=" w-full h-auto -z-1">
+                <video muted autoplay loop class="w-[200px] h-[400px] object-cover rounded-[10px] absolute top-[7%] left-[10%] rotate-10 video-1" id="vid-1">
+                    <source src="img/Project-Biskref-1.mp4" type="video/mp4">
+                </video>
+                <video muted autoplay loop class="w-[200px] h-[400px] object-cover rounded-[10px] absolute bottom-[4%] left-[5%] -rotate-10 video-1" id="vid-2">
+                    <source src="img/Project-Biskref-2.mp4" type="video/mp4">
+                </video>
+                <video muted autoplay loop class="w-[200px] h-[400px] object-cover rounded-[10px] absolute top-[7%] right-[10%] -rotate-10 video-1" id="vid-3">
+                    <source src="img/Project-Biskref-3.mp4" type="video/mp4">
+                </video>
+                <video muted autoplay loop class="w-[200px] h-[400px] object-cover rounded-[10px] absolute bottom-[4%] right-[5%] rotate-10 video-1" id="vid-4">
+                    <source src="img/Project-Biskref-4.mp4" type="video/mp4">
+                </video>
+                <video muted autoplay loop class="w-[400px] h-[200px] object-cover rounded-[10px] absolute top-[0.01px] left-[36.5%] video-1" id="vid-5">
+                    <source src="img/Project-Biskref-5.mp4" type="video/mp4">
+                </video>
+                <video muted autoplay loop class="w-[400px] h-[200px] object-cover rounded-[10px] absolute bottom-[0.01px] left-[36.5%] video-1" id="vid-6">
+                    <source src="img/Project-Biskref-6.mp4" type="video/mp4">
+                </video>
+
+                <div class="w-full h-full absolute flex justify-center items-center">
+                    <img src="img/bisnis.png" alt="" class="absolute bg-contain w-[120px] h-[120px] top-[30%] left-[30%] -rotate-10 gambar-11">
+                    <img src="img/Chart.png" alt="" class="absolute bg-contain w-[120px] h-[120px] top-[30%] right-[30%] rotate-10 gambar-12">
+                    <img src="img/Hp.png" alt="" class="absolute bg-contain w-[150px] h-[150px] top-[55%] left-[25%] rotate-10 gambar-13">
+                    <img src="img/Garis.png" alt="" class="absolute bg-contain w-[120px] h-[120px] top-[55%] right-[27%] gambar-14">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-[#001ba3] w-full h-[300px] mt-50 relative flex flex-row font-DSans text-white gap-15 pl-5 pt-3">
+        <div class="relative flex flex-col gap-3">
+            <p class="text-[25px] font-DSansBold">Hubungi Kami</p>
+            <div class="relative flex flex-col gap-3">
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/Website.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="https://polteq.ac.id" class="">polteq.ac.id</a>
+                </div>
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/kontak.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="" class="">+62-851-6757-5775</a>
+                </div>
+                <div class="relative flex flex-row gap-3 items-center">
+                    <img src="img/location.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="" class="">Jl. Fatimah <br>No.1-2, Pontianak</a>
+                </div>
+                <div class="relative flex flex-row gap-3 items-center">
+                    <img src="img/email.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="" class="">pmb@polteq.ac.id</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative flex flex-col gap-3">
+            <p class="text-[25px] font-DSansBold">Media Sosial</p>
+            <div class="relative flex flex-col gap-3">
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/instagram.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="https://www.instagram.com/politeknik_tonggak_equator/" class="">@politeknik_tonggak_equator</a>
+                </div>
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/tiktok.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="https://www.instagram.com/politeknik_tonggak_equator/" class="">@polteq</a>
+                </div>
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/youtube.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="https://www.instagram.com/politeknik_tonggak_equator/" class="">Politeknik Tonggak Equator</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <p class="text-[25px] font-DSansBold">Informasi</p>
+            <div class="relative flex flex-col gap-3">
+                <a href="" class="">Harga</a>
+                <a href="" class="">Fasilitas</a>
+                <a href="" class="">Struktur Organisasi</a>
+                <a href="" class="">Sejarah</a>
+            </div>
+        </div>
+
+        <div class="">
+            <p class="text-[25px] font-DSansBold">Program Studi</p>
+            <div class="relative flex flex-col gap-3">
+                <a href="" class="">English For Business and Proffesional Communication</a>
+                <a href="" class="">Bisnis Kreatif</a>
+                <a href="" class="">Tenkologi Pangan</a>
+                <a href="" class="">Teknologi Produksi Tanaman Perkebunan</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#001ba3] w-full h-full font-DSans text-white relative flex justify-center items-center pb-5">
+            <p class="">&copy; Copyright by Politeknik Tonggak Equator. All right reserved.</p>
+    </div>
+
+
+    <!--Gsap-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/GSDevTools.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/CustomEase.min.js"></script>
+
+
+    <!--Alpine-->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!--Javascript-->
+    <script src="biskref.js"></script>
+</body>
+</html>

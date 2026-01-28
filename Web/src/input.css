@@ -12,9 +12,15 @@
     src : url('../font/DroidSans-Bold.ttf');
 }
 
+@font-face{
+  font-family: 'Knewave';
+  src : url('../font/Knewave-Regular.ttf');
+}
+
 @theme {
     --font-DSans: "Droid-Sans" , sans-serif;
     --font-DSansBold : 'Droid-Sans-Bold', sans-serif;
+    --font-Knewave : 'Knewave', sans-serif;
 }
 
 @layer utilities {
@@ -28,5 +34,39 @@
     align-items: center !important;
     justify-content: flex-start !important;
 }
+
+  .text-stroke-1 {
+    -webkit-text-stroke: 3px #000000;
+  }
+  .text-stroke-2 {
+    -webkit-text-stroke: 18px #FFEA00;
+  }
+  .text-stroke-3 {
+    -webkit-text-stroke: 43px #0051FF;
+  }
+  .text-stroke-4 {
+    -webkit-text-stroke: 2px #0037FF;
+  }
+  .text-stroke-5 {
+    -webkit-text-stroke: 2px #FFBB00;
+  }
+  .text-stroke-6 {
+    -webkit-text-stroke: 2px #000000;
+  }
+  .text-stroke-7 {
+    -webkit-text-stroke: 36px #0051FF;
+  }
+  .text-stroke-8 {
+    -webkit-text-stroke: 1.5px #000000;
+  }
+  .text-stroke-9{
+    -webkit-text-stroke: 3px #000000;
+  }
+  .text-stroke-10{
+    -webkit-text-stroke: 18px #FFEA00;
+  }
+  .text-stroke-11{
+    -webkit-text-stroke: 35px #0051FF;
+  }
 }
 
