@@ -587,3 +587,16 @@ tl6.from('.teks-6',{
 }, 1.5)
 }
 
+var tl7 = gsap.timeline({
+    scrollTrigger : {
+        trigger : '.box-9'
+    }
+})
+
+tl7.from('.box-9', {
+    opacity : 0,
+    duration : 1,
+    y : 200,
+    ease : 'power4.out'
+})
+

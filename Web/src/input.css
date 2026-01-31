@@ -68,5 +68,20 @@
   .text-stroke-11{
     -webkit-text-stroke: 35px #0051FF;
   }
+  .text-stroke-12{
+    -webkit-text-stroke: 20px #0051FF;
+  }
+  .text-stroke-13{
+    -webkit-text-stroke: 8px #FFEA00;
+  }
+  .text-stroke-14{
+    -webkit-text-stroke: 3px #000000;
+  }
+  .text-stroke-15{
+    -webkit-text-stroke: 1px #000000;
+  }
+  .text-stroke-16{
+    -webkit-text-stroke: 3px #000000;
+  }
 }
 
