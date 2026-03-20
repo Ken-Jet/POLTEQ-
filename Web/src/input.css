@@ -19,7 +19,7 @@
 
 @theme {
     --font-DSans: "Droid-Sans" , sans-serif;
-    --font-DSansBold : 'Droid-Sans-Bold', sans-serif;
+    --font-DSansBold : 'Droid-Sans-Bold','Noto Color Emoji', sans-serif;
     --font-Knewave : 'Knewave', sans-serif;
 }
 

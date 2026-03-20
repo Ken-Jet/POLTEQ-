@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBPC</title>
+    <link rel="stylesheet" href="src/output.css">
+
+    <!-- Noto Emoji -->
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+
+    <!-- Lottie -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+</head>
+<body class="h-auto overflow-hidden">
+    <div class="sticky top-0 flex flex-row justify-between pt-2 align-center bg-white shadow-lg pb-[10px] box-1 z-1000">
+        <div class="relative flex flex-row">
+            <img src="img/logo polteq.jpg" alt="" class="w-[100px] h-[75px] bg-cover relative left-5">
+            <div class="relative flex flex-col justify-center">
+                <h4 class="font-DSansBold ml-10 text-[25px]">Politeknik Tonggak Equator</h4>
+                <p class="font-DSans ml-10 text-[18px]">POLTEQ Means Quality</p>
+            </div>
+        </div>
+        <div class="mr-10 relative flex flex row items-center justify-center gap-15">
+            <p class="font-DSansBold text-[18px] hover:underline cursor-pointer">Home</p>
+            <p class="font-DSansBold text-[18px] hover:underline cursor-pointer">Tentang</p>
+            <div class="" x-data="bar1('studi')">
+                <p class="font-DSansBold text-[18px] hover:underline cursor-pointer"  @click.stop="toggle()">Program Studi</p>
+
+                <div class="relative">
+                    <div class="absolute top-8.5 flex flex-col gap-2 w-[130px] h-[0px] bg-white overflow-hidden" x-ref="bar1" @click.outside = 'close()'>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">EBPC</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">BisKref</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">TPTP</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">TP</p>
+                    </div>
+                </div>
+            </div>
+            <div class="" x-data="bar1('Info')">
+                <p class="font-DSansBold text-[18px] hover:underline cursor-pointer" @click.stop="toggle()">Informasi</p>
+
+                <div class="relative">
+                    <div class="absolute top-8.5 flex flex-col gap-2 w-[100px] h-[0px] bg-white overflow-hidden" x-ref="bar1" @click.outside = 'close()'>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">SPP Kampus</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">Fasilitas</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">Struktur Organisasi</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">Sejarah</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative flex flex-row z-2 justify-center items-center">
+                <div class="absolute outline-[#1a0278] w-[40px] h-[40px] outline-3 z-1 rounded-[50%] opacity-0 bulat-1"></div>
+                <p class="text-[25px]">&#9776;</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[url(./../img/kelas-polteq.jpg)] w-full h-screen bg-no-repeat bg-cover bg-fixed fixed -z-10 opacity-[0.12]"></div>
+
+    <div class="w-full h-160 relative flex flex-col justify-center items-center font-DSansBold text-[46px] gap-3">
+        <div class="pl-5 pr-5 teks-1 relative inline-block"><span class="highlight1 bg-red-300 w-full h-full absolute top-[0.1px] left-[0.1px]"></span><p class="relative z-2">English for Business</p></div>
+        <div class="pl-5 pr-5 teks-2 relative inline-block"><span class="highlight2 bg-blue-300 w-full h-full absolute top-[0.1px] left-[0.1px]"></span><p class="relative z-2">and Proffesional Communication</p></div>
+
+        <div class="w-full h-full absolute top-[1px] z-1">
+            <img src="img/ebpc-2.png" alt="" class="w-[125px] h-[125px] absolute top-[20%] -rotate-18 left-[6%] img-1">
+            <img src="img/ebpc-3.png" alt="" class="w-[75px] h-[75px] absolute top-[17%] left-[14%] rotate-15 img-1">
+            <img src="img/ebpc-11.png" alt="" class="w-[150px] h-[150px] absolute top-[5%] left-[24%] rotate-16 img-2">
+            <img src="img/ebpc-10.png" alt="" class="w-[150px] h-[150px] absolute top-[5%] left-[44%] -rotate-14 img-3">
+            <img src="img/ebpc-4.png" alt="" class="w-[150px] h-[150px] absolute top-[5%] right-[25%] rotate-10 img-4">
+            <img src="img/ebpc-12.png" alt="" class="w-[150px] h-[150px] absolute top-[18%] right-[7%] -rotate-12 img-5">
+            <div class="w-[300px] h-[500px] overflow-hidden absolute bottom-[0.1px] left-[0.1px] rotate-5"><img src="img/ebpc-5.png" alt="" class="absolute bottom-[0.1px] bg-contain h-[400px] img-6"></div>
+            <div class="w-[400px] h-[200px] absolute bottom-[0.1px] right-[0.1px] overflow-hidden -rotate-5"><img src="img/ebpc-6.png" alt="" class="bg-contain img-7"></div>
+            <div class="w-[500px] h-[250px] absolute bottom-[0.1px] left-[35%] overflow-hidden"><img src="img/ebpc-7.png" alt="" class="w-[500px] h-[250px] img-8"></div>
+            <div class="w-[100px] h-[200px] absolute bottom-[0.1px] left-[20%] overflow-hidden"><img src="img/ebpc-8.png" alt="" class="w-[100px] h-[200px] absolute img-9"></div>
+        </div>
+
+    </div>
+
+    <div class="w-full h-screen mt-30 box-2">
+        <div class="w-full h-full relative flex flex-col items-center justify-center">
+            <div class="relative flex flex-row items-center justify-center font-DSansBold h-fit top-5 gap-5 teks-3">
+                <p class="text-center text-[38px]">Apa Itu English for Business <br> and Professional Communication</p>
+                <p class="text-[110px]">?</p>
+            </div>
+
+            <div class="relative flex flex-row items-center justify-center right-10">
+                <div class="w-fill"><img src="img/ebpc-9.png" alt="" class="w-[900px] h-[600px] box-3"></div>
+                <div class="w-[600px] relative flex-col font-DSans right-7 box-4">
+                    <p class=""><strong>English for Business and Professional Communication (EBPC)</strong> merupakan program studi yang berfokus pada penguasaan Bahasa Inggris yang diaplikasikan secara langsung dalam konteks dunia kerja dan kegiatan bisnis profesional. Program studi ini mengintegrasikan pembelajaran keterampilan bahasa Inggris dengan pemahaman dasar-dasar bisnis, sehingga mahasiswa dibekali kemampuan komunikasi yang efektif, strategis, dan relevan untuk kebutuhan industri maupun pengembangan usaha mandiri.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-screen relative flex items-center justify-center flex-col gap-20 z-1 box-5">
+        <div class="font-DSansBold mb-30 teks-4"><p class="text-[30px]">Hal Apa Yang Dipelajari di EBPC</p></div>
+        <lottie-player src="JSON/ebpc-transparent.json" background="transparent" loop autoplay speed='1' class="w-[50%] h-[50%] lottie1"></lottie-player>
+        <div class="absolute w-full h-screen flex justify-center items-center -z-1 top-35">
+            <div class="absolute size-fit skill skill-1 opacity-0 hover:cursor-pointer -z-1 flex items-center justify-center">
+            <img src="img/ebpc-2.png" alt="" class="w-[100px] h-[100px]"> 
+            <p class="absolute text-nowrap font-DSansBold text-[20px] opacity-0 desc1 -z-10">Bahasa Inggris</p>
+        </div>
+            <div class="absolute size-fit skill skill-2 opacity-0 hover:cursor-pointer -z-2 flex items-center justify-center">
+                <img src="img/ebpc-10.png" alt="" class="w-[100px] h-[100px] ">
+                <p class="absolute text-nowrap font-DSansBold text-[20px] opacity-0 desc2 -z-10">Bisnis</p> 
+            </div>
+            <div class="absolute size-fit skill skill-3 opacity-0 hover:cursor-pointer -z-3 flex items-center justify-center">
+                <img src="img/ebpc-13.png" alt="" class="w-[100px] h-[100px] ">
+                <p class="absolute text-nowrap font-DSansBold text-[20px] opacity-0 desc3 -z-10">Perhotelan</p>  
+            </div>
+            <div class="absolute size-fit skill skill-4 opacity-0 hover:cursor-pointer -z-4 flex items-center justify-center">
+                <img src="img/manajemen-sdm.png" alt="" class="w-[100px] h-[100px] "> 
+                <p class="absolute text-nowrap font-DSansBold text-[20px] opacity-0 desc4 -z-10">Manajemen</p>  
+            </div>
+            <div class="absolute size-fit skill skill-5 opacity-0 hover:cursor-pointer -z-5 flex items-center justify-center">
+                <img src="img/pemasaran-digital.png" alt="" class="w-[100px] h-[100px] "> 
+                <p class="absolute text-nowrap font-DSansBold text-[20px] opacity-0 desc5 -z-10">Pemasaran</p> 
+            </div>
+            <div class="absolute size-fit skill skill-6 opacity-0 hover:cursor-pointer -z-6 flex items-center justify-center">
+                <img src="img/ebpc-12.png" alt="" class="w-[100px] h-[100px] "> 
+                <p class="absolute text-nowrap font-DSansBold text-[20px] opacity-0 desc6 -z-10">Komunikasi</p> 
+            </div>
+            <div class="absolute size-fit skill skill-7 opacity-0 hover:cursor-pointer -z-7 flex items-center justify-center">
+                <img src="img/akuntansi.png" alt="" class="w-[100px] h-[100px] "> 
+                <p class="absolute text-nowrap font-DSansBold text-[20px] opacity-0 desc7 -z-10">Akuntansi</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-fit relative flex justify-centter items-center flex-col mt-50 box-6 overflow-hidden">
+        <div class="font-DSansBold teks-5"><p class="text-[30px]">Prospek Kerja Lulusan EBPC</p></div>
+
+        <div class="w-full relative flex flex-row items-center justify-center gap-10 mt-20">
+            <div class="w-[300px] h-fit relative flex flex-col items-center justify-center konten">
+                <img src="img/Enterprenur.jpg" alt="" class="w-[200px] h-[200px] bg-cover rounded-[50%] shadow-md/25">
+                <p class="mt-8 font-DSansBold text-[25px]">Pengusaha</p>
+                <p class="">Lulusan mampu membangun dan mengelola bisnis sendiri dengan kemampuan komunikasi bisnis dalam bahasa Inggris, melakukan negosiasi dengan klien internasional, serta mempresentasikan produk atau layanan secara profesional.</p>
+            </div>
+            <div class="w-[300px] h-fit relative flex flex-col items-center justify-center konten">
+                <img src="img/Banker.jpg" alt="" class="w-[200px] h-[200px] bg-cover rounded-[50%] shadow-md/25">
+                <p class="mt-8 font-DSansBold text-[25px]">Banker</p>
+                <p class="">Lulusan dapat bekerja di sektor perbankan dengan kemampuan komunikasi profesional untuk melayani nasabah, menjelaskan produk keuangan, serta berkomunikasi dengan mitra atau klien internasional menggunakan bahasa Inggris.</p>
+            </div>
+            <div class="w-[300px] h-fit relative flex flex-col items-center justify-center konten">
+                <img src="img/Perhotelan.jpg" alt="" class="w-[200px] h-[200px] bg-cover rounded-[50%] shadow-md/25">
+                <p class="mt-8 font-DSansBold text-[25px]">Perhotelan</p>
+                <p class="">Lulusan memiliki kemampuan komunikasi pelayanan yang baik dalam bahasa Inggris untuk bekerja di industri hospitality seperti hotel atau resort, melayani tamu internasional, serta menangani komunikasi profesional dalam lingkungan kerja global.</p>
+            </div>
+            <div class="w-[300px] h-fit relative flex flex-col justify-center items-center konten">
+                <img src="img/creative-entrepenur.jpg" alt="" class="w-[200px] h-[200px] bg-cover rounded-[50%] shadow-md/25">
+                <p class="mt-8 font-DSansBold text-[25px]">Marketing Specialist</p>
+                <p class="mb-6">Lulusan mampu merancang strategi pemasaran, membuat konten promosi dalam bahasa Inggris, melakukan komunikasi brand secara profesional, serta menjangkau pasar global melalui media digital dan komunikasi bisnis yang efektif.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-screen relative flex flex-col justify-start items-center mt-40 box-7">
+        <div class="font-DSansBold teks-6"><p class="text-[30px]">Cerita dan Pelajaran dari IISMA</p></div>
+        <div class="swiper1 w-full h-full overflow-hidden">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide h-full relative bottom-15 first">
+                    <div class="w-full h-full relative flex justify-center items-center">
+                        <div class="w-[75%] h-[500px] relative flex flex-row justify-center items-center gap-10">
+                            <div class="h-full w-[35%]"><video src="img/iisma-1.mp4" muted autoplay loop class="h-full w-full object-cover object-top rounded-[20px] shadow-md/25"></video></div>
+
+                            <div class="w-[45%] h-full relative flex flex-col justify-center gap-3">
+                                <div class="text-[36px] swip-head"><p class="font-DSansBold">IISMA 2022 Ireland <span class="text-[45px]">🇮🇪</span></p></div>
+                                <div class="swip-content text-[16px]">Video ini menampilkan pengalaman mahasiswa dalam program Indonesian International Student Mobility Awards (IISMA) di Ireland. Dalam video terlihat berbagai aktivitas mahasiswa selama menjalani program pertukaran internasional, mulai dari kegiatan akademik di lingkungan kampus, interaksi dengan mahasiswa dari berbagai negara, hingga eksplorasi lingkungan kota dan budaya lokal Irlandia. Pengalaman ini memberikan kesempatan bagi mahasiswa untuk mengembangkan wawasan global, meningkatkan kemampuan akademik, serta memperkaya pemahaman budaya dalam lingkungan pendidikan internasional.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide h-full relative bottom-15">
+                    <div class="w-full h-full relative flex justify-center items-center">
+                        <div class="w-[75%] h-[500px] relative flex flex-row justify-center items-center gap-10">
+                            <div class="h-full w-[35%]"><video src="img/iisma-2.mp4" muted autoplay loop class="h-full w-full object-cover object-top rounded-[20px] shadow-md/25"></video></div>
+
+                            <div class="w-[45%] h-full relative flex flex-col justify-center gap-3">
+                                <div class="text-[36px] swip-head"><p class="font-DSansBold">IISMA 2023 Hungary <span class="text-[45px]">🇭🇺</span></p></div>
+                                <div class="swip-content text-[16px]">Video ini menampilkan pengalaman mahasiswa dalam program Indonesian International Student Mobility Awards (IISMA) di University of Pécs, Pécs, Hungary. Dalam video terlihat berbagai aktivitas mahasiswa selama mengikuti program, mulai dari kegiatan akademik di lingkungan kampus, interaksi dengan mahasiswa internasional, hingga eksplorasi kota bersejarah Pécs yang kaya akan budaya dan arsitektur. Melalui program IISMA ini, mahasiswa memperoleh kesempatan untuk memperluas wawasan global, mengembangkan kemampuan akademik, serta merasakan pengalaman belajar dan kehidupan lintas budaya di tingkat internasional.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide h-full relative bottom-15">
+                    <div class="w-full h-full relative flex justify-center items-center">
+                        <div class="w-[75%] h-[500px] relative flex flex-row justify-center items-center gap-10">
+                            <div class="h-full w-[35%]"><video src="img/iisma-3.mp4" muted autoplay loop class="h-full w-full object-cover object-top rounded-[20px] shadow-md/25"></video></div>
+
+                            <div class="w-[45%] h-full relative flex flex-col justify-center gap-3">
+                                <div class="text-[36px] swip-head"><p class="font-DSansBold">IISMAVO 2023 Taiwan <span class="text-[45px]">🇹🇼</span></p></div>
+                                <div class="swip-content text-[16px]">Video ini menampilkan pengalaman mahasiswa dalam program Indonesian International Student Mobility Awards (IISMA) di Asia University, Taiwan. Dalam video terlihat berbagai aktivitas mahasiswa selama mengikuti program, mulai dari kegiatan akademik di kelas seperti presentasi dan diskusi, interaksi dengan mahasiswa internasional di lingkungan kampus, hingga partisipasi dalam kegiatan budaya dan acara kampus. Melalui program ini, mahasiswa memperoleh pengalaman belajar di lingkungan internasional sekaligus memperluas wawasan akademik dan budaya selama menjalani studi di Taiwan.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="absolute w-full h-full z-1"> -->
+            <img src="img/ebpc-2.png" alt="" class="w-[110px] h-[110px] absolute left-15 -rotate-15 bg-contain img-10">
+            <img src="img/Chart.png" alt="" class="w-[110px] h-[110px] absolute bg-contain right-15 rotate-15 img-11">
+            <img src="img/bisnis.png" alt="" class="w-[110px] h-[110px] absolute bg-contain bottom-35 left-15 rotate-15 img-12">
+            <img src="img/Video.png" alt="" class="w-[110px] h-[110px] absolute bg-contain bottom-35 right-15 -rotate-15 img-13">
+        <!-- </div> -->
+    </div>
+
+    <div class="w-full h-auto relative flex items-center justify-center mt-35 flex-col box-8">
+
+        <div class="mb-5 relative flex flex-row items-center justify-center gap-2 font-DSansBold text-[45px]">
+            <p class="teks-7">Daftar di EBPC Sekarang!</p>
+        </div>
+
+        <div class="bg-[#F0F0F0] w-[300px] h-[300px] rounded-[50%] relative flex items-center justify-center shadow-lg/20 box-9">
+            <img src="img/POLTEQ-BG.png" alt="" class="w-[225px] h-[175px] bg-contain">
+        </div>
+
+        <button class="mt-15 bg-[#001ba3] text-white font-DSansBold p-3.5 text-[25px] rounded-[15px] hover:cursor-pointer box-10"> Daftar Sekarang</button>
+    </div>
+
+    <div class="bg-[#001ba3] w-full h-[300px] mt-30 relative flex flex-row font-DSans text-white gap-15 pl-5 pt-3">
+        <div class="relative flex flex-col gap-3">
+            <p class="text-[25px] font-DSansBold">Hubungi Kami</p>
+            <div class="relative flex flex-col gap-3">
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/Website.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="https://polteq.ac.id" class="">polteq.ac.id</a>
+                </div>
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/kontak.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="" class="">+62-851-6757-5775</a>
+                </div>
+                <div class="relative flex flex-row gap-3 items-center">
+                    <img src="img/location.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="" class="">Jl. Fatimah <br>No.1-2, Pontianak</a>
+                </div>
+                <div class="relative flex flex-row gap-3 items-center">
+                    <img src="img/email.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="" class="">pmb@polteq.ac.id</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative flex flex-col gap-3">
+            <p class="text-[25px] font-DSansBold">Media Sosial</p>
+            <div class="relative flex flex-col gap-3">
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/instagram.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="https://www.instagram.com/politeknik_tonggak_equator/" class="">@politeknik_tonggak_equator</a>
+                </div>
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/tiktok.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="https://www.instagram.com/politeknik_tonggak_equator/" class="">@polteq</a>
+                </div>
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/youtube.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="https://www.instagram.com/politeknik_tonggak_equator/" class="">Politeknik Tonggak Equator</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <p class="text-[25px] font-DSansBold">Informasi</p>
+            <div class="relative flex flex-col gap-3">
+                <a href="" class="">Harga</a>
+                <a href="" class="">Fasilitas</a>
+                <a href="" class="">Struktur Organisasi</a>
+                <a href="" class="">Sejarah</a>
+            </div>
+        </div>
+
+        <div class="">
+            <p class="text-[25px] font-DSansBold">Program Studi</p>
+            <div class="relative flex flex-col gap-3">
+                <a href="" class="">English For Business and Proffesional Communication</a>
+                <a href="" class="">Bisnis Kreatif</a>
+                <a href="" class="">Tenkologi Pangan</a>
+                <a href="" class="">Teknologi Produksi Tanaman Perkebunan</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#001ba3] w-full h-full font-DSans text-white relative flex justify-center items-center pb-5">
+            <p class="">&copy; Copyright by Politeknik Tonggak Equator. All right reserved.</p>
+    </div>
+
+    <!--Alpine-->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>    
+
+    <!--Gsap-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/GSDevTools.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/CustomEase.min.js"></script>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Skrip JS -->
+     <script src="ebpc.js"></script>
+</body>
+</html>
