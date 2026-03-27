@@ -17,10 +17,68 @@
   src : url('../font/Knewave-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'CocoReg';
+  src: url('../font/Cocogoose-Pro-Regular-trial.ttf');
+}
+
+@font-face {
+  font-family: 'CocoDark';
+  src: url('../font/Cocogoose-Pro-Darkmode-trial.ttf');
+}
+
+@font-face {
+  font-family: 'CocoLight';
+  src: url('../font/Cocogoose-Pro-Light-trial.ttf');
+}
+
+@font-face {
+  font-family: 'CocoLightItali';
+  src: url('../font/Cocogoose-Pro-Light-Italic-trial.ttf');
+}
+
 @theme {
     --font-DSans: "Droid-Sans" , sans-serif;
     --font-DSansBold : 'Droid-Sans-Bold','Noto Color Emoji', sans-serif;
     --font-Knewave : 'Knewave', sans-serif;
+    --font-CocoReg : 'CocoReg', sans-serif;
+    --font-CocoDark: 'CocoDark', sans-serif;
+    --font-CocoLight: 'CocoLight', sans-serif;
+    --font-CocoLightItali: 'CocoLightItali', sans-serif;
+}
+
+@layer components{
+  .page-center{
+    @apply w-full h-screen relative flex flex-col items-center justify-center ;
+  }
+
+  .section-center-row{
+    @apply w-full h-full relative flex flex-row items-center justify-center;
+  }
+
+  .overlay-full{
+    @apply w-full h-full absolute top-0 z-[5];
+  }
+
+  .image-simbol-1{
+    @apply w-[140px] h-[140px] bg-contain absolute;
+  }
+
+  .section-center-col{
+    @apply w-full h-full relative flex flex-col items-center justify-center;
+  }
+
+  .card1{
+    @apply w-[15%] h-[300px] relative flex flex-col items-center justify-center gap-5 text-center text-[17px];
+  }
+
+  .card1-image{
+    @apply w-full h-[50%] bg-contain;
+  }
+
+  .card2{
+    @apply w-[45%] h-[40%] relative flex flex-col items-center justify-center;
+  }
 }
 
 @layer utilities {

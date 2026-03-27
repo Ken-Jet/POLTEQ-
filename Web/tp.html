@@ -4,8 +4,240 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teknologi Pangan</title>
+    <link rel="stylesheet" href="src/output.css">
 </head>
-<body>
-    
+<body class="bg-[#BDE1FF] overflow-x-hidden">
+    <div class="sticky top-0 flex flex-row justify-between pt-2 align-center bg-white shadow-lg pb-[10px] box-1 z-1000">
+        <div class="relative flex flex-row">
+            <img src="img/logo polteq.jpg" alt="" class="w-[100px] h-[75px] bg-cover relative left-5">
+            <div class="relative flex flex-col justify-center">
+                <h4 class="font-DSansBold ml-10 text-[25px]">Politeknik Tonggak Equator</h4>
+                <p class="font-DSans ml-10 text-[18px]">POLTEQ Means Quality</p>
+            </div>
+        </div>
+        <div class="mr-10 relative flex flex row items-center justify-center gap-15">
+            <p class="font-DSansBold text-[18px] hover:underline cursor-pointer">Home</p>
+            <p class="font-DSansBold text-[18px] hover:underline cursor-pointer">Tentang</p>
+            <div class="" x-data="bar1('studi')">
+                <p class="font-DSansBold text-[18px] hover:underline cursor-pointer"  @click.stop="toggle()">Program Studi</p>
+
+                <div class="relative">
+                    <div class="absolute top-8.5 flex flex-col gap-2 w-[130px] h-[0px] bg-white overflow-hidden" x-ref="bar1" @click.outside = 'close()'>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">EBPC</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">BisKref</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">TPTP</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">TP</p>
+                    </div>
+                </div>
+            </div>
+            <div class="" x-data="bar1('Info')">
+                <p class="font-DSansBold text-[18px] hover:underline cursor-pointer" @click.stop="toggle()">Informasi</p>
+
+                <div class="relative">
+                    <div class="absolute top-8.5 flex flex-col gap-2 w-[100px] h-[0px] bg-white overflow-hidden" x-ref="bar1" @click.outside = 'close()'>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">SPP Kampus</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">Fasilitas</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">Struktur Organisasi</p>
+                        <p class="font-DSansBold cursor-pointer text-[13px] opacity-0">Sejarah</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative flex flex-row z-2 justify-center items-center">
+                <div class="absolute outline-[#1a0278] w-[40px] h-[40px] outline-3 z-1 rounded-[50%] opacity-0 bulat-1"></div>
+                <p class="text-[25px]">&#9776;</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[url(./../img/kelas-polteq.jpg)] w-screen h-screen bg-cover opacity-[0.12] bg-fixed fixed inset -z-10"></div>
+
+    <div class="page-center h-160">
+        <div class="section-center-row gap-10">
+            <p class="font-CocoReg text-[100px] leading-30 head-1">Teknologi <br> Pangan</p>
+            <div class="w-[700px] mb-30" id="lottie1"></div>
+        </div>
+
+        <div class="overlay-full">
+            <img src="img/tp-13.png" alt="" class="image-simbol-1 top-[5%] left-[18%] -rotate-20 gambar-1">
+            <img src="img/tp-14.png" alt="" class="image-simbol-1 top-[5%] left-[7%] rotate-17 gambar-2">
+            <img src="img/tp-15.png" alt="" class="image-simbol-1 bottom-[10%] left-[30%] rotate-21 gambar-3">
+            <img src="img/tp-16.png" alt="" class="image-simbol-1 bottom-[10%] left-[20%] gambar-4">
+        </div>
+    </div>
+
+    <div class="page-center mt-20 box-11">
+        <p class="font-CocoDark text-[40px] head-2">Apa itu Teknologi Pangan (TP)</p>
+        <div class="section-center-row mb-30">
+            <div class="w-[50%]" id="lottie2"></div>
+            <p class="w-[45%] text-[20px] font-CocoLight leading-10 konteks-1">Teknologi Pangan (TP) adalah jurusan yang mempelajari pengolahan, pengawetan, pengemasan, dan distribusi pangan secara aman dan berkualitas dengan menerapkan ilmu kimia, biologi, dan teknik. Jurusan ini bertujuan menghasilkan sistem pangan yang efisien, bergizi, dan berkelanjutan serta lulusan yang siap bekerja di industri, penelitian, dan pengembangan produk.</p>
+        </div>
+    </div>
+
+    <div class="page-center gap-10 box-12">
+        <p class="font-CocoDark text-[35px] text-center head-3">Hal Apa Yang Dipelajari di <br>Teknologi Pangan (TP)</p>
+        <div class="section-center-row gap-10 flex-wrap">
+            <div class="card1">
+                <img src="img/tp-4.png" alt="" class="car1-image">
+                <p class="font-CocoLightItali">Pangan dan Gizi</p>
+            </div>
+            <div class="card1">
+                <img src="img/tp-5.png" alt="" class="car1-image">
+                <p class="font-CocoLightItali">Teknologi dan Pengetahuan Pangan</p>
+            </div>
+            <div class="card1">
+                <img src="img/tp-6.png" alt="" class="car1-image">
+                <p class="font-CocoLightItali relative bottom-3">Pengetahuan Bahan</p>
+            </div>
+            <div class="card1">
+                <img src="img/tp-7.png" alt="" class="car1-image">
+                <p class="font-CocoLightItali relative bottom-3">Dasar Kuliner</p>
+            </div>
+            <div class="card1">
+                <img src="img/tp-8.png" alt="" class="car1-image">
+                <p class="font-CocoLightItali relative bottom-5">Pengemasan dan Penyimpanan</p>
+            </div>
+            <div class="card1">
+                <img src="img/tp-9.png" alt="" class="car1-image">
+                <p class="font-CocoLightItali">Pengawetan Bahan</p>
+            </div>
+            <div class="card1">
+                <img src="img/tp-10.png" alt="" class="car1-image">
+                <p class="font-CocoLightItali relative bottom-5">Dietetika</p>
+            </div>
+            <div class="card1">
+                <img src="img/tp-11.png" alt="" class="car1-image">
+                <p class="font-CocoLightItali">Pengolahan Mutu dan Higiene</p>
+            </div>
+            <div class="card1">
+                <img src="img/tp-12.png" alt="" class="car1-image">
+                <p class="font-CocoLightItali">Pengolahan Pemanfaatan Limbah</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-center mt-40 box-13">
+        <p class="font-CocoDark text-[30px] text-center head-4">Prospek Karir Lulusan <br>Teknologi Pangan (TP)</p>
+        <div class="section-center-row flex-wrap mb-25">
+            <div class="card2 gap-5">
+                <div class="card2-lottie w-[450px] h-[450px]" id="lottie3"></div>
+                <div class="bg-[#639aff] rounded-[20px] p-3"><p class="font-CocoDark text-[20px]">Pengusaha</p></div>
+            </div>
+            <div class="card2 gap-5">
+                <div class="card2-lottie w-[450px] h-[450px]" id="lottie4"></div>
+                <div class="bg-[#639aff] rounded-[20px] p-3"><p class="font-CocoDark text-[20px]">Chef</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-center h-fit gap-10 box-14">
+        <p class="font-CocoDark text-[35px] head-5">Project Kami</p>
+        <div class="section-center-row gap-10">
+            <div class="w-[400px] h-[550px] relative vid-contain"><video src="img/tp-1.mp4" class="object-cover size-full vid" id="vid1" autoplay loop muted></video></div>
+            <div class="w-[400px] h-[550px] relative vid-contain"><video src="img/tp-2.mp4" class="object-cover size-full vid" id="vid2" autoplay loop muted></video></div>
+            <div class="w-[400px] h-[550px] relative vid-contain"><video src="img/tp-3.mp4" class="object-cover size-full vid" id="vid3" autoplay loop muted></video></div>
+        </div>
+
+        <div class="absolute size-full">
+            <img src="img/tp-17.png" alt="" class="image-simbol-1 rotate-6 left-[5%] top-[3%]">
+            <img src="img/tp-18.png" alt="" class="image-simbol-1 top-0 right-[5%] top-[3%] -rotate-6">
+            <img src="img/tp-19.png" alt="" class="image-simbol-1 bottom-[-50px] left-[5%]">
+            <img src="img/tp-20.png" alt="" class="image-simbol-1 bottom-[-50px] right-[3%] rotate-25">
+        </div>
+    </div>
+
+    <div class="w-full h-auto relative flex items-center justify-center mt-40 flex-col box-8">
+
+        <div class="mb-5 relative flex flex-row items-center justify-center gap-2 font-DSansBold text-[35px]">
+            <p class="teks-7 font-CocoReg">Pangan Berkualitas, Hidup Berkualitas</p>
+        </div>
+
+        <div class="bg-[#F0F0F0] w-[300px] h-[300px] rounded-[50%] relative flex items-center justify-center shadow-lg/20 box-9">
+            <img src="img/POLTEQ-BG.png" alt="" class="w-[225px] h-[175px] bg-contain">
+        </div>
+
+        <button class="mt-15 bg-[#001ba3] text-white font-DSansBold p-3.5 text-[25px] rounded-[15px] hover:cursor-pointer box-10"> Daftar Sekarang</button>
+    </div>
+
+    <div class="bg-[#001ba3] w-full h-[300px] mt-30 relative flex flex-row font-DSans text-white gap-15 pl-5 pt-3">
+        <div class="relative flex flex-col gap-3">
+            <p class="text-[25px] font-DSansBold">Hubungi Kami</p>
+            <div class="relative flex flex-col gap-3">
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/Website.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="https://polteq.ac.id" class="">polteq.ac.id</a>
+                </div>
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/kontak.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="" class="">+62-851-6757-5775</a>
+                </div>
+                <div class="relative flex flex-row gap-3 items-center">
+                    <img src="img/location.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="" class="">Jl. Fatimah <br>No.1-2, Pontianak</a>
+                </div>
+                <div class="relative flex flex-row gap-3 items-center">
+                    <img src="img/email.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="" class="">pmb@polteq.ac.id</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative flex flex-col gap-3">
+            <p class="text-[25px] font-DSansBold">Media Sosial</p>
+            <div class="relative flex flex-col gap-3">
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/instagram.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="https://www.instagram.com/politeknik_tonggak_equator/" class="">@politeknik_tonggak_equator</a>
+                </div>
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/tiktok.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="https://www.instagram.com/politeknik_tonggak_equator/" class="">@polteq</a>
+                </div>
+                <div class="relative flex flex-row gap-3">
+                    <img src="img/youtube.png" alt="" class="w-[25px] h-[25px] bg-contain invert">
+                    <a href="https://www.instagram.com/politeknik_tonggak_equator/" class="">Politeknik Tonggak Equator</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <p class="text-[25px] font-DSansBold">Informasi</p>
+            <div class="relative flex flex-col gap-3">
+                <a href="" class="">Harga</a>
+                <a href="" class="">Fasilitas</a>
+                <a href="" class="">Struktur Organisasi</a>
+                <a href="" class="">Sejarah</a>
+            </div>
+        </div>
+
+        <div class="">
+            <p class="text-[25px] font-DSansBold">Program Studi</p>
+            <div class="relative flex flex-col gap-3">
+                <a href="" class="">English For Business and Proffesional Communication</a>
+                <a href="" class="">Bisnis Kreatif</a>
+                <a href="" class="">Tenkologi Pangan</a>
+                <a href="" class="">Teknologi Produksi Tanaman Perkebunan</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#001ba3] w-full h-full font-DSans text-white relative flex justify-center items-center pb-5">
+            <p class="">&copy; Copyright by Politeknik Tonggak Equator. All right reserved.</p>
+    </div>
+
+    <!--Alpine-->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>    
+
+    <!--Gsap-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/GSDevTools.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/CustomEase.min.js"></script>
+
+    <!-- lottie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+
+    <!-- script -->
+     <script src="tp.js"></script>
 </body>
 </html>
